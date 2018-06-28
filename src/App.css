@@ -1,0 +1,349 @@
+*, :before, :after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: -apple-system, "Nunito", sans-serif
+}
+
+::-moz-selection {
+	background-color: #050505;
+	color: #FFF
+}
+
+::selection {
+	background-color: #050505;
+	color: #FFF
+}
+
+body {
+	background-color: #FFF;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 0
+}
+
+@media only screen and (min-width: 1024px) {
+	body {
+		font-size: 16px
+	}
+}
+
+article, aside, figure, footer, header, main, nav, section, summary {
+	display: block
+}
+
+main {
+	flex: 1
+}
+
+a {
+	background-color: transparent;
+	color: #2196F3;
+	text-decoration: none;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s
+}
+
+a:hover {
+	color: #0D47A1;
+	cursor: pointer;
+	outline-width: 0;
+	text-decoration: underline
+}
+
+a:active {
+	outline-width: 0
+}
+
+b, strong {
+	font-weight: bold
+}
+
+i, em {
+	font-style: italic
+}
+
+p {
+  color: #555;
+	letter-spacing: .5px;
+	line-height: 1.75;
+	margin-bottom: 16px;
+	margin-top: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+	margin-top: 0
+}
+
+h1 {
+	font-size: 3.5rem
+}
+
+h2 {
+	font-size: 3rem
+}
+
+h3 {
+	font-size: 2.5rem
+}
+
+h4 {
+	font-size: 2rem
+}
+
+h5 {
+	font-size: 1.5rem
+}
+
+h6 {
+	font-size: 1rem
+}
+
+ul {
+	margin: 0;
+	padding: 0
+}
+
+li {
+	list-style-type: none
+}
+
+hr {
+	background-color: rgba(0,0,0,.1);
+	border: 0;
+	height: 1px;
+	margin: 16px 0;
+	width: 100%
+}
+
+img {
+	border-style: none;
+	max-width: 100%
+}
+
+input, button, select, textarea, pre, code {
+	margin: 0
+}
+
+pre {
+	background-color: #F5F5F5;
+	border-radius: 3px;
+	color: #050505;
+	margin-bottom: 1rem;
+	letter-spacing: .5px;
+	line-height: 1.5;
+	padding: 1rem;
+	overflow-y: auto;
+	width: 100%
+}
+
+code {
+	white-space: pre
+}
+
+kbd {
+	background-color: #050505;
+	border-radius: 3px;
+	color: #FFF;
+	font-size: 90%;
+	padding: .25rem .5rem
+}
+
+form {
+	width: 100%
+}
+
+progress {
+	vertical-align: baseline
+}
+
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sub {
+	bottom: -.5rem
+}
+
+sup {
+	top: -.5rem
+}
+
+.buton {
+  background-color: #03968a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+  backface-visibility: hidden;
+  border-radius: 80px;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  padding: 16px 40px;
+  text-decoration: none;
+  transition: box-shadow .3s;
+  user-select: none;
+}
+
+.buton:hover {
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25), inset 0 0 100px rgba(0, 0, 0, .25);
+  text-decoration: none
+}
+
+.buton.kucuk {
+  font-size: 13px;
+  padding: 8px 24px;
+}
+
+/* Header */
+header {
+  animation-duration: 1s;
+  animation-name: bounce;
+  background-color: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, .05);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;;
+  width: 70%;
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 16px 0;
+}
+
+header a {
+  align-items: center;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 15px;
+  justify-content: center;
+  margin-right: 4px;
+  padding: 8px 12px;
+  text-decoration: none;
+  user-select: none;
+}
+
+header a:last-child {
+  margin-right: 0;
+}
+
+header a:not(.logo):not(.buton):hover {
+  background-color: rgba(0, 0, 0, .03);
+  color: #444;
+  text-decoration: none;
+}
+
+header a:not(.logo).active {
+  background-color: rgba(0, 0, 0, .03);
+}
+
+header a.logo {
+  margin-right: 16px;
+}
+
+header ul:first-child a:not(.logo) svg {
+  margin-right: 8px;
+}
+
+/* Main */
+main {
+  margin: 280px auto 0 auto;
+  width: 1040px;
+}
+
+/* Home */
+.home {
+  animation-duration: 2s;
+  animation-name: fadeInHome;
+}
+
+.home .intro-title {
+  font-weight: 100;
+  width: 50%;
+}
+
+.home .intro-title span {
+  color: #03968a
+}
+
+.home .ti-cursor {
+  margin-left: -4px;
+}
+
+.features {
+  margin-top: 200px;
+}
+
+.features figure {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 24px;
+  transition: .3s;
+  width: 260px;
+}
+
+.features figure:hover {
+  background-color: rgba(0, 0, 0, .025);
+  border-radius: 4px;
+}
+
+.features figure h5 {
+  color: #343434;
+  margin: 0;
+  transition: .3s;
+}
+
+.features figure span {
+  color: #b5b5b5;
+  transition: .3s;
+}
+
+.features figure:hover span {
+  color: #444
+}
+
+.features figure svg {
+  display: block;
+  margin-top: 16px;
+}
+
+.features figure.responsive:hover h5 {
+  color: #ff9800
+}
+
+.features figure.flexbox:hover h5 {
+  color: #0277bd
+}
+
+.features figure.turkish:hover h5 {
+  color: #e30a17
+}
+
+.features figure.open-source:hover h5 {
+  color: #323131
+}
+
+/*
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: rubberBand;
+*/
