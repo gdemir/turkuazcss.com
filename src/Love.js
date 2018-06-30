@@ -5,10 +5,16 @@ export default class Love extends Component {
     return (
       <Fragment>
         <section className="love">
-          <h3>Aşk</h3>
-          <p>
-            Turkuaz Css ile ilgili gönderdiğiniz tweet'leri burada yayınlayacağız.
-          </p>
+          <div className="container">
+            <div className="flex">
+              <div className="ck12">
+                <h3>Aşk</h3>
+                <p>
+                  Turkuaz Css ile ilgili gönderdiğiniz tweet'leri burada yayınlayacağız.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </Fragment>
     );

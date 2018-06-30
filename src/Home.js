@@ -23,10 +23,16 @@ export default class Home extends Component {
     return (
       <Fragment>
         <section className="home">
-          <h4 className="intro-title">
-            <b><span>Turkuaz Css</span></b>, daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
-          </h4>
-          <h5 className="typeit"></h5>
+          <div className="container">
+            <div className="flex">
+              <div className="ck12">
+                <h4 className="intro-title">
+                  <b><span>Turkuaz Css</span></b>, daha hızlı ve kolay web sayfaları geliştirmek için tasarlanan güçlü bir Framework
+                </h4>
+                <h5 className="typeit"></h5>
+              </div>
+            </div>
+          </div>
         </section>
         <section className="features">
           <Features/>
